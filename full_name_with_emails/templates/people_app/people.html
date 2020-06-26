@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>People</title>
+  </head>
+  <body>
+    <h1>This is where the table of the people is:</h1>
+
+    {% if people %}
+    <ol>
+      {% for person in people %}
+      <li>Person's details:</li>
+      <ul>
+        <li>First Name: {{person.First_Name}}</li>
+        <li>Last Name: {{person.Last_Name}}</li>
+        <li>Email: {{person.Email}}</li>
+      </ul>
+      {%endfor%}
+    </ol>
+    {% endif %}
+
+  </body>
+</html>
